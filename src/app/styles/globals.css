@@ -1,29 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --light-blue: #98c6e9;
-  --dark-gray: #101010;
-  --deep-blue: #005ca1;
-  --medium-gray: #717171;
-  --orange: #f5a732;
-  --cyan: #00b0d8;
-  --pink: #eb526e;
-  --green: #a2c746;
-
-  --dark-navy: #050375;
-  --light-cyan: #00b0d9;
-  --violet: #100d9d;
-  --white: #ffffff;
-  --gold: #dbc645;
-  --purple: #b04ee1;
-  --aqua: #0bf0ca;
-  --navy: #050c48;
-  --black: #000225;
-}
-
-body {
-  color: var(--white);
-  background-color: var(--dark-navy);
-}

@@ -1,3 +1,10 @@
+import { rubik } from "./assets/fonts/fonts";
+
 export default function Home() {
-  return <h1>teste</h1>;
+  return (
+    <div className={`${rubik.variable}`}>
+      <h1 className="font-rubik 700 text-secondary-100">teste</h1>
+      <p className="text-brand-100">testezinho</p>
+    </div>
+  );
 }
