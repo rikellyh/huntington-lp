@@ -1,4 +1,4 @@
-import { rubik } from "./assets/fonts/fonts";
+import { rubik } from "../../public/assets/fonts/fonts";
 
 export default function Home() {
   return (

@@ -7,11 +7,6 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-    },
     extend: {
       colors: {
         brand: {
@@ -32,10 +27,11 @@ export default {
           200: "#0BF0CA",
           300: "#B04EE1",
           400: "#DBC645",
-          500: "#100D9D",
-          600: "#050375",
-          700: "#050C48",
-          800: "#000225",
+          500: "#2231CF",
+          600: "#100D9D",
+          700: "#050375",
+          800: "#050C48",
+          900: "#000225",
         },
       },
       fontFamily: {

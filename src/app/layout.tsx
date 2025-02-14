@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-import { lato } from "./assets/fonts/fonts";
+import Header from "./components/layout/header";
+import { lato } from "../../public/assets/fonts/fonts";
 import "./styles/globals.css";
 
 export const metadata: Metadata = {
@@ -28,8 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`bg-support-600 ${lato.className} antialiased`}>
-        {children}
+      <body className={`bg-support-700 ${lato.className} antialiased`}>
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );
