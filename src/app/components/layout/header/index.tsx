@@ -9,7 +9,7 @@ import LogoImg from "../../../../../public/assets/logo/logo-subtitulo-branco.svg
 export default function Header() {
   return (
     <header className={`${rubik.className} text-support-50 text-xs h-70 p-4`}>
-      <div className="flex items-center justify-evenly max-w-[2000px]">
+      <div className="flex items-center justify-evenly max-w-[2000px] mx-auto">
         <Image src={LogoImg} width={168} height={43} alt="logo" />
         <Nav />
         <div className="flex items-center gap-3">
