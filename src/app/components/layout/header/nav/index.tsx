@@ -17,7 +17,10 @@ export function Nav() {
           <li key={index}>
             <Link
               href={link.href}
-              className="font-light hover:font-semibold transition-all duration-200"
+              style={{
+                textRendering: "geometricPrecision",
+              }}
+              className="font-light hover:font-semibold hover:scale-90 transition-all duration-200"
             >
               {link.text}
             </Link>

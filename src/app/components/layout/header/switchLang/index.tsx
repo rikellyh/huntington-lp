@@ -19,17 +19,16 @@ export function SwitchLang() {
         src={BRFlag}
         alt="bandeira do Brasil"
         title="PT"
-        showArrow={!selectedLang}
+        showArrow
       />
       {selectedLang && (
-        <div className="absolute top-full right-0 bg-support-800">
-          <ButtonLangImg
-            src={ENFlag}
-            alt="bandeira do Reino Unido"
-            title="EN"
-            showArrow={false}
-          />
-        </div>
+        <ButtonLangImg
+          src={ENFlag}
+          className="absolute z-10 bg-support-800"
+          alt="bandeira do Reino Unido"
+          title="EN"
+          showArrow={false}
+        />
       )}
     </div>
   );
