@@ -5,7 +5,7 @@ import { ButtonLangImg } from "./button";
 import BRFlag from "../../../../../../public/assets/flags/brazil-flag.png";
 import ENFlag from "../../../../../../public/assets/flags/united-kingdom-flag.png";
 
-export function SwitchLang() {
+export const SwitchLang = () => {
   const [selectedLang, setSelectedLang] = useState(false);
 
   const handleSelectLang = () => setSelectedLang(!selectedLang);
@@ -32,4 +32,4 @@ export function SwitchLang() {
       )}
     </div>
   );
-}
+};
