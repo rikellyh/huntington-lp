@@ -54,6 +54,7 @@ export default function Schedule() {
 
   return (
     <section
+      id="agenda"
       className={`${rubik.className} bg-support-800 text-support-50 h-1/2 md:h-full mt-12`}
     >
       <div className="flex flex-col items-center gap-8 px-20 py-20 max-w-[1200px] mx-auto mt-20">
