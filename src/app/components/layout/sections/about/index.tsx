@@ -2,6 +2,9 @@
 import { useState } from "react";
 import Image from "next/image";
 
+import { Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import { Modal } from "@/app/components/modal";
 import { ButtonRedirect } from "@/app/components/buttonRedirect";
 import { SpeakersCard } from "./speakersCard";
@@ -50,16 +53,34 @@ export default function Event() {
                   INTERNACIONAIS CONFIRMADOS
                 </span>
               </h1>
-              <div className="flex flex-nowrap gap-4">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <SpeakersCard
-                    key={index}
-                    toggle={handleToggleModal}
-                    img={SpeakerImg}
-                    title="Eduardo Leme Alves Da Motta"
-                  />
-                ))}
-              </div>
+              <Swiper
+                spaceBetween={16}
+                slidesPerView={1}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                <SwiperSlide className="swipper-slideSpeaker">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <SpeakersCard
+                      key={index}
+                      toggle={handleToggleModal}
+                      img={SpeakerImg}
+                      title="Eduardo Leme Alves Da Motta"
+                    />
+                  ))}
+                </SwiperSlide>
+                <SwiperSlide className="swipper-slideSpeaker">
+                  {Array.from({ length: 3 }).map((_, index) => (
+                    <SpeakersCard
+                      key={index}
+                      toggle={handleToggleModal}
+                      img={SpeakerImg}
+                      title="Eduardo Leme Alves Da Motta"
+                    />
+                  ))}
+                </SwiperSlide>
+              </Swiper>
               <div className="flex justify-center mt-8">
                 <ButtonRedirect
                   href="#agenda"

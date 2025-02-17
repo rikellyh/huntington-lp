@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import Header from "./components/layout/header";
 import { lato } from "../../public/assets/fonts/fonts";
+
+import "swiper/swiper-bundle.css";
 import "./styles/globals.css";
 
 export const metadata: Metadata = {

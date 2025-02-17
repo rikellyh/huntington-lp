@@ -10,7 +10,7 @@ interface SpeakersCardProps {
 
 export const SpeakersCard = ({ img, title, toggle }: SpeakersCardProps) => {
   return (
-    <div className="w-[13rem] pt-[28px] px-[17px] pb-[25px] bg-gradient-to-b from-[#050375] to-[#371EBC] overflow-hidden transform transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg border">
+    <div className="w-[13rem] pt-[28px] px-[17px] pb-[25px] bg-gradient-to-t from-[#384799] via-[#3C38A3] to-[#27558a] overflow-hidden rounded-lg shadow-lg border border-gray-400">
       <div className="relative">
         <div className="absolute top-0">
           <Image
