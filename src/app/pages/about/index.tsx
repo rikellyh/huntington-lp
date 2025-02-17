@@ -1,12 +1,12 @@
-import Link from "next/link";
-
-import { rubik } from "../../../../public/assets/fonts/fonts";
 import Event from "@/app/components/layout/sections/about";
+import { ButtonRedirect } from "@/app/components/buttonRedirect";
+import { rubik } from "../../../../public/assets/fonts/fonts";
 
 export default function About() {
   return (
     <>
-      <div
+      <section
+        id="sobre"
         className={`bg-secondary-400 text-support-50 h-[70vh] relative ${rubik.className}`}
       >
         <div className="custom-bg"></div>
@@ -20,15 +20,14 @@ export default function About() {
                 gestores de saúde”. Saiba mais abaixo.
               </span>
             </div>
-            <Link
+            <ButtonRedirect
               href="/"
-              className="w-full max-w-[19.5rem] mt-4 inline-block bg-support-500 py-3 px-8 font-semibold text-center hover:bg-support-600 transition-colors duration-200"
-            >
-              INSCREVA-SE
-            </Link>
+              text="INSCREVA-SE"
+              className="w-full max-w-[19.5rem] mt-4 inline-block bg-support-500 py-3 px-8 hover:bg-support-600 transition-colors duration-200"
+            />
           </div>
         </div>
-      </div>
+      </section>
       <Event />
     </>
   );

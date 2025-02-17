@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-export function Nav() {
+export const Nav = () => {
   const navLinks = [
-    { href: "/", text: "SOBRE" },
-    { href: "/speakers", text: "SPEAKERS" },
-    { href: "/agenda", text: "AGENDA CIENTÍFICA" },
-    { href: "/comissao", text: "COMISSÃO CIENTÍFICA" },
-    { href: "/patrocinadores", text: "PATROCINADORES" },
-    { href: "/faq", text: "FAQ" },
+    { href: "#sobre", text: "SOBRE" },
+    { href: "#speakers", text: "SPEAKERS" },
+    { href: "#agenda", text: "AGENDA CIENTÍFICA" },
+    { href: "#comissao", text: "COMISSÃO CIENTÍFICA" },
+    { href: "#patrocinadores", text: "PATROCINADORES" },
+    { href: "#faq", text: "FAQ" },
   ];
 
   return (
@@ -29,4 +29,4 @@ export function Nav() {
       </ul>
     </nav>
   );
-}
+};

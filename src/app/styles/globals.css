@@ -28,3 +28,26 @@
     #130769 100%
   );
 }
+
+.swipper-slideSpeaker {
+  display: flex !important;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bola {
+  border-radius: 50%;
+  position: relative;
+}
+
+.bola::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #00b0d9;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
