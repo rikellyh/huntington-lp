@@ -10,9 +10,11 @@ export const Countdown = () => {
   return (
     <div className="flex justify-center space-x-4">
       <CircleTimer countText={days} subCountText="Dias" />
-      <div className="bola"></div>
+      <div className="separation-point"></div>
       <CircleTimer countText={hours} subCountText="Horas" />
+      <div className="separation-point"></div>
       <CircleTimer countText={minutes} subCountText="Minutos" />
+      <div className="separation-point"></div>
       <CircleTimer countText={seconds} subCountText="Segundos" />
     </div>
   );
