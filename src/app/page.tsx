@@ -4,6 +4,7 @@ import Schedule from "./pages/schedule";
 import Speakers from "./pages/speakers";
 
 import { ButtonScroll } from "./components/buttonScroll";
+import Faq from "./pages/faq";
 
 export default function LandingPage() {
   return (
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <Speakers />
       <Schedule />
       <Comission />
+      <Faq />
       <ButtonScroll />
     </>
   );

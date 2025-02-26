@@ -9,7 +9,7 @@ export default function Comission() {
   return (
     <section
       id="comissao"
-      className={`${rubik.className} text-support-50 flex flex-col mt-28`}
+      className={`${rubik.className} text-support-50 flex flex-col mt-28 pb-28`}
     >
       <div className="text-center mx-auto mb-28">
         <div className="text-3xl mb-12">
