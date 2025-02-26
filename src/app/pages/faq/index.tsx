@@ -74,14 +74,16 @@ export default function Faq() {
           </div>
         </div>
       </div>
-      <div className="py-20 text-center w-full">
-        <div className="flex justify-center items-center mx-auto max-w-7xl">
+      <div className="bg-support-700 py-20 text-center w-full">
+        <div className="flex justify-between items-center mx-auto max-w-7xl">
           <div className="w-1/2 max-w-[32.5rem] flex flex-col items-start gap-8 text-start">
             <h1 className="text-3xl">COMO CHEGAR</h1>
             <div>
               <h2 className="mb-4 text-2xl">Endereço</h2>
               <p className="text-lg">
-                Hotel Tivoli Mofarrej São Paulo/SP - Brasil
+                Hotel Tivoli Mofarrej
+                <br />
+                São Paulo/SP - Brasil
               </p>
               <span className="font-light">
                 Alameda Santos, 1437 - Cerqueira César, São Paulo
