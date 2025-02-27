@@ -29,6 +29,19 @@
   );
 }
 
+.gradient-border-bottom-sponsors {
+  border-bottom: 2px solid transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(
+    90deg,
+    #8b803a 0%,
+    #3a6785 23%,
+    #5e3985 56.5%,
+    #3a6785 79%,
+    #8b803a 100%
+  );
+}
+
 .swipper-slideSpeaker {
   display: flex !important;
   justify-content: center;
@@ -60,6 +73,16 @@
   background: linear-gradient(#050c48, #050c48) padding-box,
     linear-gradient(to right, #b04ee1, #01afd9) border-box;
   border: 4px solid transparent;
+}
+
+.accordion {
+  background-color: #7578993b;
+  border-bottom: 2px solid #5d57f1;
+}
+
+.accordion.active {
+  background-color: #9da3e53b;
+  border-bottom: 2px solid #8b8aab;
 }
 
 .padding-zero {
