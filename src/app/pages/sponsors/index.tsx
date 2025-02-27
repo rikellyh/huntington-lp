@@ -15,14 +15,14 @@ import BronzeItem8 from "../../../../public/assets/section-bg/sponsors/bronze-8.
 import BronzeItem9 from "../../../../public/assets/section-bg/sponsors/bronze-9.png";
 import SupportItem1 from "../../../../public/assets/section-bg/sponsors/support-1.png";
 import SupportItem2 from "../../../../public/assets/section-bg/sponsors/support-2.png";
+import SponsorsTitle from "@/app/components/layout/sections/sponsors";
 
 export default function Sponsors() {
   return (
     <section id="patrocinadores" className="px-16">
       <div className="max-w-6xl mx-auto">
         <div className="h-40 flex items-center flex-col gap-4 mb-20 text-center">
-          <h1 className="text-2xl text-support-100">REALIZAÇÃO</h1>
-          <div className="gradient-border-bottom w-full h-1"></div>
+          <SponsorsTitle title="REALIZAÇÃO" />
           <Image
             src={Logo}
             className="mt-4"
@@ -34,10 +34,7 @@ export default function Sponsors() {
         <div className="h-48 flex justify-between items-center flex-row mb-20">
           <div className="w-[47%] h-full flex flex-col items-center gap-4">
             <div className="w-full text-center">
-              <h1 className="text-2xl text-support-100 mb-4">
-                PATROCÍNIO OURO
-              </h1>
-              <div className="gradient-border-bottom w-full h-1"></div>
+              <SponsorsTitle title="PATROCÍNIO OURO" className="mb-4" />
             </div>
             <div className="flex items-center gap-16 pt-8">
               <Image src={GoldItem1} alt="imagem patrocinador ouro" />
@@ -46,10 +43,7 @@ export default function Sponsors() {
           </div>
           <div className="w-[45%] h-full flex flex-col items-center gap-4">
             <div className="w-full text-center">
-              <h1 className="text-2xl text-support-100 mb-4">
-                PATROCÍNIO PRATA
-              </h1>
-              <div className="gradient-border-bottom w-full h-1"></div>
+              <SponsorsTitle title="PATROCÍNIO PRATA" className="mb-4" />
             </div>
             <div className="flex items-center gap-16 pt-8">
               <Image src={SilverItem1} alt="imagem patrocinador prata" />
@@ -58,8 +52,7 @@ export default function Sponsors() {
           </div>
         </div>
         <div className="flex items-center flex-col gap-4 mb-20 text-center">
-          <h1 className="text-2xl text-support-100">PATROCÍNIO BRONZE</h1>
-          <div className="gradient-border-bottom w-full h-1"></div>
+          <SponsorsTitle title="PATROCÍNIO BRONZE" />
           <div className="w-[75%] flex flex-col items-center gap-20 pt-10">
             <div className="h-16 flex items-center gap-20">
               <Image src={BronzeItem1} alt="imagem patrocinador bronze" />
@@ -81,10 +74,7 @@ export default function Sponsors() {
         <div className="h-48 flex justify-between items-center flex-row mb-20">
           <div className="w-[45%] h-full flex flex-col items-center gap-4">
             <div className="w-full text-center">
-              <h1 className="text-2xl text-support-100 mb-4">
-                APOIO INSTITUCIONAL
-              </h1>
-              <div className="gradient-border-bottom w-full h-1"></div>
+              <SponsorsTitle title="APOIO INSTITUCIONAL" className="mb-4" />
             </div>
             <div className="flex items-center gap-16 pt-8">
               <Image src={SupportItem1} alt="imagem apoiador" />
@@ -93,8 +83,7 @@ export default function Sponsors() {
           </div>
           <div className="w-[45%] h-full flex flex-col items-center gap-4">
             <div className="w-full text-center">
-              <h1 className="text-2xl text-support-100 mb-4">MÍDIA OFICIAL</h1>
-              <div className="gradient-border-bottom w-full h-1"></div>
+              <SponsorsTitle title="MÍDIA OFICIAL" className="mb-4" />
             </div>
             <div className="flex items-center gap-16 pt-8">
               <Image src={SupportItem1} alt="imagem apoiador" />

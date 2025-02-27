@@ -29,6 +29,19 @@
   );
 }
 
+.gradient-border-bottom-sponsors {
+  border-bottom: 2px solid transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(
+    90deg,
+    #8b803a 0%,
+    #3a6785 23%,
+    #5e3985 56.5%,
+    #3a6785 79%,
+    #8b803a 100%
+  );
+}
+
 .swipper-slideSpeaker {
   display: flex !important;
   justify-content: center;
